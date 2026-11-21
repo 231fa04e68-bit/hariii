@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <div class="atmosphere" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+        <span class="heart h1">♥</span>
+        <span class="heart h2">♥</span>
+        <span class="heart h3">♥</span>
+        <span class="heart h4">♥</span>
+        <span class="heart h5">♥</span>
+        <span class="heart h6">♥</span>
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+        <span class="spark s1"></span>
+        <span class="spark s2"></span>
+        <span class="spark s3"></span>
+        <span class="spark s4"></span>
+    </div>
+
+    <!-- Music Button -->
+    <button id="music-btn" class="music-button">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+    </button>
+    
+    <!-- Audio Element -->
+    <audio id="bg-music" loop>
+        <source src="our-music.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Opening Page -->
+    <div id="opening-page" class="page active">
+        <div class="content">
+            <p class="eyebrow">a little something, just for you</p>
+            <h1 class="main-title">For you, my love</h1>
+            <div class="flourish" aria-hidden="true">♥</div>
+            <p class="subtitle">I love you</p>
+            <button id="start-btn" class="start-button">Tap to open your surprise</button>
+        </div>
+        <div id="countdown-overlay" class="countdown-overlay">
+            <div class="countdown-number" id="countdown-number">3</div>
+        </div>
+        <div class="credits">@niiihari</div>
+    </div>
+
+    <!-- Cake Page -->
+    <div id="cake-page" class="page">
+        <div class="flower-background">
+            <div class="flower flower-1"></div>
+            <div class="flower flower-2"></div>
+            <div class="flower flower-3"></div>
+            <div class="flower flower-4"></div>
+            <div class="flower flower-5"></div>
+        </div>
+        <div class="content">
+            <h2 class="cake-title">Make a wish & cut the cake! 🎂</h2>
+            <p class="instruction">Move your cursor over the cake to cut it</p>
+            <div class="cake-container">
+                <div class="cake" id="cake">
+                    <div class="cake-layer layer-1"></div>
+                    <div class="cake-layer layer-2"></div>
+                    <div class="cake-layer layer-3"></div>
+                    <div class="candles">
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                        <div class="candle"></div>
+                    </div>
+                    <div class="cake-cut-effect"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishes Page -->
+    <div id="wishes-page" class="page">
+        <div class="flower-background">
+            <div class="flower flower-1"></div>
+            <div class="flower flower-2"></div>
+            <div class="flower flower-3"></div>
+            <div class="flower flower-4"></div>
+            <div class="flower flower-5"></div>
+        </div>
+        <div class="content">
+            <h1 class="wishes-title">Happy Birthday! 🎉</h1>
+            <div class="wishes-container">
+                <div class="wish-card">
+                    <p>Happy birthday niharika memories hblock,unlock,roaming in guntur shopping malls, and mohatsav edhi Naku chala pedha memories echay Apudu we are not in relationship.
+                        We started ekao chala dhuram vacham asalu yela ante nvu edhi workout avadhu vadhu ane mata nunchi yela ala ana work out cheyali ane antha varukuuuu it's all u for me I am for u my luv.
+                    </p>
+                </div>
+                <div class="wish-card">
+                    <p>First i saw u at pharmacy block in white dress Apudu nachav chala we started talking melaga become good friends then i proposed to u nvu ante yentha estam ante chepalenu amuluu but nvu vunte chala bavuntadhi nvu yepudu chepthu vuntav yendhuku nvu em matladavu ani netho vunte ala hayiga nenu chusthu vundi povali ani vuntadhiii.
+                        Manam relationship loki velli oka 5 months ayi vuntadhi manam anukoni but nvu ante Naku 3 years nunchi aa estam mana relationship lo manam yekuva godavale padam yeni godavalu ayina i won't leave u niharika and i promise i try Inka alanti godavalu avakunda chusukunta I make u happy 😊.
+                    </p>
+                </div>
+                <div class="wish-card">
+                    <p>Netho yepudu happy ga vundali I love u more because nvu nanu chala baristhav niharika chala ardham chesukuntav yentha ante Naku kopam vachina u call me back u only say sorry first nvu aaa sought out chesthav godavalani nenu chala bhadha petanu niharika chala yedipinchaaa I am very very sorry 😔 amuluuu.
+                        Out of all these we should happy elaney mana relation vundali ani I am wishing Inka chala chepalani vundhi em chepalo ardham kavatla once again happy happy birthday duduuuu💕.
+                    </p>
+                </div>
+                
+                
+            </div>
+            <button id="gallery-btn" class="next-button">View Our Memories 📸</button>
+        </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="gallery-page" class="page">
+        <div class="flower-background">
+            <div class="flower flower-1"></div>
+            <div class="flower flower-2"></div>
+            <div class="flower flower-3"></div>
+            <div class="flower flower-4"></div>
+            <div class="flower flower-5"></div>
+        </div>
+        <div class="content">
+            <h1 class="gallery-title">Our Memories 💕</h1>
+            <p class="gallery-subtitle">Swipe or click arrows to navigate</p>
+            <div class="gallery-carousel">
+                <button class="carousel-btn prev-btn" id="prev-btn">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.07%20PM%20(1).jpeg" alt="Memory 1">
+                        <textarea class="photo-caption" aria-label="Caption for memory 1" placeholder="this is where u confessed u r love in that venture" rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.11%20PM%20(1).jpeg" alt="Memory 2">
+                        <textarea class="photo-caption" aria-label="Caption for memory 2" placeholder="That day we went for hanuman temple for a reason manam anukunam vache hanuman jayanthi kuda ilaney vunadali ani we went temple edharam kalisi hanuman chalisa chadivam its a nice day" rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.09%20PM.jpeg" alt="Memory 3">
+                        <textarea class="photo-caption" aria-label="Caption for memory 3" placeholder="its in our viba fest nenu a roju hurt chesenandhuku sorry i love u " rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.10%20PM.jpeg" alt="Memory 4">
+                        <textarea class="photo-caption" aria-label="Caption for memory 4" placeholder=" this pic i think nvu nanu accept chesina kothalo na chetha vegetables mopinchav a roju nvu anav alavatu chsuko nanu pelli chesukunte life lo ilane moyali ani kosepu navukuna nenu " rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.11%20PM.jpeg" alt="Memory 5">
+                        <textarea class="photo-caption" aria-label="Caption for memory 5" placeholder="This is in first year u dont even love netho oka 30 min kalisi vuntaniki apatiki apudu i came guntur to meet u that day " rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.07%20PM%20(2).jpeg" alt="Memory 6">
+                        <textarea class="photo-caption" aria-label="Caption for memory 6" placeholder="Thia pic nvu vinayaka chavithi roju dhigavu apudu u r not talking to me  a roju chala sarlu anukuna nenu direct ga chudaleka poyanu ani chala bavunav love uuuuuuu amuluuu" rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.12%20PM.jpeg" alt="Memory 7">
+                        <textarea class="photo-caption" aria-label="Caption for memory 7" placeholder="This is our most most memorable moment i lost my footwear it was a gooddddddddddddddddddd dayyy  " rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.13%20PM.jpeg" alt="Memory 8">
+                        <textarea class="photo-caption" aria-label="Caption for memory 8" placeholder="Here naku konchem bayam vesindhi but i like it chala " rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.14%20PM%20(1).jpeg" alt="Memory 9">
+                        <textarea class="photo-caption" aria-label="Caption for memory 9" placeholder=" This pic is first hanuman jayanthi i prayed to next hanuman jayanthi kuda kalisi vunadali ani" rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.02%20PM%20(1).jpeg" alt="Memory 10">
+                        <textarea class="photo-caption" aria-label="Caption for memory 10" placeholder="u look gorgeous in that orange dress jai babuuuuu" rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.14%20PM.jpeg" alt="Memory 11">
+                        <textarea class="photo-caption" aria-label="Caption for memory 11" placeholder="u kept this pic as u r story  a roju nenu anandham padanu niharika no words to express " rows="2"></textarea>
+                    </div>
+                    <div class="carousel-slide">
+                        <img class="gallery-photo" src="images/WhatsApp%20Image%202026-11-21%20at%206.08.15%20PM.jpeg" alt="Memory 12">
+                        <textarea class="photo-caption" aria-label="Caption for memory 12" placeholder="onece again happy birthday amulu love uuuu infinity" rows="2"></textarea>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" id="next-btn">❯</button>
+            </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <p class="gallery-note">You and Me Forever and ever.</p>
+            <button id="video-btn" class="next-button video-button">Watch our video</button>
+        </div>
+    </div>
+
+    <div id="video-overlay" class="video-overlay" aria-hidden="true">
+        <button id="close-video" class="close-video" type="button" aria-label="Close video">✕</button>
+        <video id="memory-video" class="memory-video" controls playsinline>
+            <source src="our-video.mp4" type="video/mp4">
+        </video>
+        <p id="video-hint" class="video-hint" hidden>Drop your video in this folder and name it our-video.mp4</p>
+    </div>
+
+    <script src="script.js?v=3"></script>
+</body>
+</html>
